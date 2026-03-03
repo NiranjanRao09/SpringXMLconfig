@@ -5,4 +5,7 @@ public class Classroom implements  Break{
     public void Freetime() {
         System.out.println("Free time Using Class Room");
     }
+    public void AfterBreak(){
+        System.out.println("Java Programming is the First Class");
+    }
 }
