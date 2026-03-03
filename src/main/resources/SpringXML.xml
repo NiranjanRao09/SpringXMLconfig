@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="std"  class="com.telusko.Students" autowire="byType"  >
+<!--        <property name="rollNum" value="32" />-->
+        <property name="bk" ref="lib"/>
+
+    </bean>
+
+<!--    <bean id="std1" class="com.telusko.Students">-->
+<!--        <property name="Name" value="Sudheer"/>-->
+<!--        <property name="rollNum" value="34"/>-->
+<!--    </bean>-->
+
+    <bean id="cls" class="com.telusko.Classroom" >
+
+    </bean>
+
+    <bean id="lib" class="com.telusko.Library">
+
+    </bean>
+
+
+</beans>
